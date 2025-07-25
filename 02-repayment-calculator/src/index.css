@@ -12,3 +12,74 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formCard{
+  width: 400px;
+  padding: 32px;
+  background: #443a3a;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+
+}
+
+.header{
+  display: flex;
+  border-bottom: 2px solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title{
+  padding: 0;
+  /* margin: 0; */
+  font-size: large;
+}
+
+.header-btn{
+  cursor: pointer;
+  height: 100%;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.calculate-btn{
+  cursor:pointer;
+  height: 100%;
+  text-align: center;
+  border-radius: 15px 15px 15px 0px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.calculate-btn:hover{
+  background-color: #ad6464;
+}
+
+
+.input-boxes{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.amount{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.mortage-term-Rate{
+  display: flex;
+}
