@@ -7,9 +7,13 @@ export default function CalculateForm( {onResult} ) {
   const [amount, SetAmount] = useState('')
   const [year, setYear] = useState('')
   const [percentage, setPercentage] = useState('')
+  // const [result, setResult] = useState(null)
 
   function handleSubmit(e){
     e.preventDefault();
+    // onResult({
+    //   result,
+    // })
 
     const principal = Number(amount);
     const montlyRate = Number(percentage) / 100 / 12;
@@ -25,6 +29,8 @@ export default function CalculateForm( {onResult} ) {
     } else if(mortageType === 'interestOnly'){
       monthlypayment = principal * montlyRate
     }
+    const payment = monthlypayment ? monthlypayment.toFixed(2) : null
+    onResult({payment})
     
   }
 

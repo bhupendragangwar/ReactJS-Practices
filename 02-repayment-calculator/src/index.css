@@ -31,18 +31,18 @@
 
 .header{
   display: flex;
-  border-bottom: 2px solid black;
   justify-content: space-between;
   align-items: center;
 }
 
 .header-title{
+  color: #a39191;
   padding: 0;
   /* margin: 0; */
-  font-size: large;
 }
 
 .header-btn{
+  color: #a39191;
   cursor: pointer;
   height: 100%;
   text-decoration: underline;
@@ -78,8 +78,16 @@
   display: flex;
   flex-direction: column;
   
+  
 }
 
 .mortage-term-Rate{
   display: flex;
+  margin-top: 15px;
 }
+
+
+.type{
+  margin-top: 15px;
+}
+
