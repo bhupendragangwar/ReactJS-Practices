@@ -1,14 +1,12 @@
 import './App.css'
-// import Home from './components/Home'
 
 import { ThemeProvider } from './contextProvider/ThemeContext'
 
-// import useTheme from './components/ThemeToggle'
 import Navbar from './components/headers/Navbar'
+import Counter from './components/Counter'
 
 function App() {
 
-  // const { theme, toggleTheme } = useTheme('light')
 
   return (
     // <div
@@ -36,6 +34,7 @@ function App() {
 
     <ThemeProvider>
       <Navbar />
+      <Counter />
     </ThemeProvider>
   )
 }
