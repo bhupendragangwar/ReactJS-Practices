@@ -9,6 +9,8 @@ import Newsletter from './component/page/Newsletter'
 import CustomErr from './component/Route/CustomErr'
 import Root from './component/Route/MainRoot'
 
+import { ThemeProvider } from './common/ThemeProvoder'
+
 function App() {
 
   const  route = createBrowserRouter([
@@ -27,7 +29,9 @@ function App() {
 
   return (
     <>
+    <ThemeProvider>
     <RouterProvider router={route} />
+    </ThemeProvider>
     </>
   )
 }
